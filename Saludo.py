@@ -7,8 +7,11 @@ from kivy.lang import Builder
 from kivy.config import Config
 
 # Tamaño de la ventana
+
 Config.set("graphics", "width", 400)
 Config.set("graphics", "height", 400)
+
+# Propiedades de la interfaz
 
 Builder.load_string("""
 
@@ -22,6 +25,8 @@ Builder.load_string("""
 		text: "Python"
 """)
 
+# Estructura
+
 class Contenido(BoxLayout):
 	pass
 
@@ -32,5 +37,6 @@ class Saludo(App):
 		return Contenido()
 
 # Instanciar la clase
+
 if __name__ == "__main__":
 	Saludo().run()

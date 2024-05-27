@@ -5,6 +5,8 @@ from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.lang import Builder
 
+# Propiedades de la interfaz
+
 Builder.load_string("""
 
 <Contenido>:
@@ -51,8 +53,9 @@ Builder.load_string("""
 				Rectangle: 
 					size: self.size
 					pos: self.pos
-
 """)
+
+# Estructura
 
 class Contenido(BoxLayout):
 	pass
@@ -62,6 +65,8 @@ class Metodo1(App):
 
 	def build(self):
 		return Contenido()
+
+# Iniciar la interfaz
 
 if __name__ == "__main__":
 	Metodo1().run()
